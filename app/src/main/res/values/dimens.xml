@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="default_margin">10dp</dimen>
+    <dimen name="common_component_size_dp_1">1dp</dimen>
+</resources>

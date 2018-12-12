@@ -1,0 +1,35 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="fileName"
+            type="String" />
+
+        <variable
+            name="clickEvent"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{clickEvent}"
+        android:background="@color/colorAccent"
+        android:padding="@dimen/default_margin">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@{fileName}"
+            android:textColor="@android:color/white"
+            tools:text="億載金城武" />
+
+    </RelativeLayout>
+
+</layout>
